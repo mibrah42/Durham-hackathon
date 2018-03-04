@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<form>
+	<div class="section">
+		<div class="info">
+			<li>Download form for renting houses attatched below </li>
+			<li>Fill the form</li>
+			<li>Upload the form on the webpage and submit</li>
+			<br>
+		</div><br><br>
+
+		<div class="submission">
+			<span class="download">Click <a target="_blank" href="/static/form.pdf">here</a> to download the form</span><br><br>
+
+		    <span class="download">Select image to upload:</span>
+		    <input type="file" name="fileToUpload" class="btn btn-primary" required><br><br>
+		    <input type="submit" value="Submit" name="submit" class="btn btn-primary" onclick="myFunction()" >
+	    </div>
+    </div>
+</form>
+
+<script>
+		
+			
+			var pop = document.getElementByClassName("submit");
+
+		function myFunction(){
+			alert("Form was submitted successfully");
+			window.location.replace("/");
+		}
+
+
+		
+
+	</script>
+
+{% endblock %}

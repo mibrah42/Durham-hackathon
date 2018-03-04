@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block title %} Licensed Flats {% endblock %}
+
+{% block body %}
+
+<div class="main-layout">
+	<div class="cards">
+		{% for flat in flats %}
+		<!-- <a href="/flats"> -->
+			<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url({{flat.imageUrl}});"> 
+				<div class="card-category">Popular</div>
+				<div class="card-description">
+					<h2>{{flat.address}}</h2>
+					<p>License date: {{flat.date}}</p>
+				</div>
+				<img class="card-user" src={{users[flat.user_id].user_url}}>
+				<a class="card-link" href="/flats/{{flat.id}}" ></a>
+			</div>
+			<!-- </a> -->
+		{% endfor %}
+	</div>
+		
+	<div id="map">
+		{{googlemap("map-view", lat=43.9419243285714, lng=-78.8927217428571, zoom=14, markers=coordinates)}}
+	</div>		
+
+</div>
+
+{% endblock %}

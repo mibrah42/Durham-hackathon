@@ -1,0 +1,1 @@
+{"id": 0, "address": "45 ARTANIA ST", "date": "March 04, 2018", "imageUrl": "https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat1.jpg", "licensed": True,  "lat": "43.9570707307139", "lng": "-78.8979420665661", "user_id": 8 },

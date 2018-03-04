@@ -1,0 +1,105 @@
+@import url("navbar.css");
+@import url("card.css");
+@import url("banner.css");
+@import url("reviews.css");
+
+.main-layout {
+	display: flex;
+}
+
+#map {
+	height: 100vh;
+	flex: 0 0 650px;
+	position: sticky !important;
+	top: 0 !important;
+}
+
+.cards {
+	flex-grow: 1;
+	display: flex;
+  	flex-wrap: wrap;
+  	align-content: flex-start;
+}
+.card {
+	margin: 20px 0;
+}
+
+#map-view{
+	height: 100% !important;
+	width: 100% !important;
+}
+
+
+body{
+	background-color:#eee;
+}
+
+.section{
+	margin: auto;
+    width: 50%;
+    border: 3px solid #F4FCFF;
+    padding: 10px;
+    height: 100vh;
+    background-color:#F4FCFF;
+
+}
+
+.info{
+	margin: auto;
+	margin-top: 40px;
+	width: 75%;
+	border: 1px solid black;
+	padding: 10px;
+	font-size: 15pt;
+}
+
+.download{
+	font-size: 15pt;
+	text-align: center;
+	margin: auto;
+}
+
+.submission{
+	margin: auto;
+	margin-top: 10px;
+	width: 75%;
+	padding: 10px;
+	font-size: 15pt;
+
+}
+
+.submit
+{
+padding: 10px 15px 11px !important;
+font-size: 18px !important;
+background-color: #5D97BD;
+font-weight: bold;
+text-shadow: 1px 1px #5D97BD;
+color: #ffffff;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border: 1px solid #5D97BD;
+cursor: pointer;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+input[type = "file"]{
+	padding: 10px 15px 11px !important;
+font-size: 18px !important;
+background-color: #5D97BD;
+font-weight: bold;
+text-shadow: 1px 1px #5D97BD;
+color: #ffffff;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border: 1px solid #5D97BD;
+cursor: pointer;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+
+}

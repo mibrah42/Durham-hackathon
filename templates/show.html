@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block title %} {{flat.address}} {% endblock %}
+
+
+
+
+{% block body %}
+
+<div class="banner" style="height:500px;background-position: center; background-size:cover;background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url({{flat.imageUrl}});">
+  <div class="banner-content">
+  	<img src={{user.user_url}} style="border-radius: 50%;">
+  	<h1>{{user.name}}</h1>
+  	<h2>{{user.email}}</h2>
+    <h3>{{flat.address}}</h3>
+  </div>
+</div>
+
+<h2 class="text-center" style="margin-top: 40px;">Reviews</h2>
+<div class="messages" style="width:600px; margin:0 auto !important; margin-top: 30px !important; margin-bottom: 50px !important;">
+	{% set titles = ["Amazing residence", "Highly recommended", "Friendly owner"] %}
+	{% set comments = ["I have lived there for the last two year and had a great experience", "the neighborhood is safe and its close to university campus", "I felt comfortable in the residence and had great roomates"] %}
+	{% for i in range(3) %}
+	<div class="message">
+	  <img class="avatar-large" style="width: 50px; border-radius: 50%" src={{users[i].user_url}}>
+	  <div class="message-name">
+	    <h3>{{users[i].name}}</h3>
+	    <p>10/07/17</p>
+	  </div>
+	  <div class="message-body">
+	    <p><strong>{{titles[i]}}</strong></p>
+	    <p>{{comments[i]}}</p>
+	  </div>
+	</div>
+	{% endfor %}
+</div>
+
+
+{% endblock %}
