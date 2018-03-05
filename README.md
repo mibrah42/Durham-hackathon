@@ -1,5 +1,5 @@
 # Durham-hackathon
-Web application created using flask and python.<br>
+Web application created using flask and python that shows a list of all licensed residences in the Durham region.<br>
 <br><br>
 <!-- ![home](home.png) -->
 <kbd>
