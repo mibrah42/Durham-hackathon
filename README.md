@@ -1,6 +1,13 @@
 # Durham-hackathon
 Web application created using flask and python.<br>
 <br><br>
+<!-- ![home](home.png) -->
+<img src="home.png" style="width: 600px; height:350px;">
+<br><br>
+<br><br>
+<img src="user.png" style="width: 600px; height:350px;">
+<br><br>
+<br><br>
 Steps to run application:<br><br>
 1- clone the repository on your computer<br>
 2- cd into the cloned directory from the command line<br>
