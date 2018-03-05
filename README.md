@@ -2,10 +2,10 @@
 Web application created using flask and python.<br>
 <br><br>
 <!-- ![home](home.png) -->
-<img src="home.png" style="width: 600px; height:350px;">
+<img src="home.png" style="width: 600px; height:350px; border: 1px solid black;">
 <br><br>
 <br><br>
-<img src="user.png" style="width: 600px; height:350px;">
+<img src="user.png" style="width: 600px; height:350px; border: 1px solid black;">
 <br><br>
 <br><br>
 Steps to run application:<br><br>
